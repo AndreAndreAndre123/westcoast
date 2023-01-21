@@ -1,0 +1,51 @@
+
+//start/home page
+
+.home-contailer{
+    text-align: center;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+
+//teachers page
+.teachers-course-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    align-items: center;
+    
+    
+
+
+    .add-teacher-course-button{
+        background-color: white;
+        padding: 1rem;
+        color: black;
+    }
+
+    .add-teacher-course-button:hover{
+        background-color: beige;
+        padding: 1.2rem;
+       
+    }
+}
+
+//teachers list
+
+.teacher-course-list-container{
+    margin-top: 40px;
+
+
+    .each-teacher-course-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+

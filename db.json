@@ -1,0 +1,32 @@
+{
+  "courses": [
+    {
+      "title": "engelska",
+      "time": "3",
+      "description": "engelska lektion",
+      "start": "2023-01-04",
+      "number": "323",
+      "id": "12afbb00-c598-c213-4112-fd797a63031c"
+    }
+  ],
+  "teachers": [
+    {
+      "firstName": "andre",
+      "lastName": "odmark",
+      "email": "andre@gmail.com",
+      "phone": "07312312312",
+      "socialNbr": "1994342323",
+      "comp": "svenska",
+      "id": "70090804-7f8f-a250-968a-c92735fb60a3"
+    },
+    {
+      "firstName": "johan",
+      "lastName": "rönndahl",
+      "email": "johan@gmail.com",
+      "phone": "07364623762",
+      "socialNbr": "19942323222",
+      "comp": "engelska och svenska\n",
+      "id": "34374f34-a508-85aa-e67c-e5db40778ae0"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    background-color: beige;
+    align-items: center;
+  
+    
+
+
+    li{
+        list-style: none;
+        
+
+        a{
+            font-size: 1.5em;
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+
+}
