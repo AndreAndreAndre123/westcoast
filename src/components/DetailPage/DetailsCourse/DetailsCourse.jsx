@@ -6,12 +6,11 @@ const DetailCourserPage = () => {
    
 
     let details = location.state;
-    console.log(details);
+
     return (
         <>
         <div className="teacher-course-details">
         <h1>Detaljer om kursen</h1>
-        
         <div className='detail-box'>
         <h2>{details.title}</h2>
         <p>Kursens längd är: {details.time} veckor</p>

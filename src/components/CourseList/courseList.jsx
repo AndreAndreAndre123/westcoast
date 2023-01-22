@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 import "../../styles/styles.css";
 
 
@@ -15,7 +15,7 @@ console.log(courseList)
           {
             courseList && courseList.map(course => {
               return(
-                <div key={course.id} className="each-teacher-box">
+                <div key={course.id} className="each-teacher-course-box">
                 <h4>{course.title}</h4>
                 <p>Längd: {course.time} veckor</p>
                 <p>Startdatum: {course.start}</p>

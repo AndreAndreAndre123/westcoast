@@ -1,10 +1,12 @@
-import { useContext, useRef } from "react";
+import { useContext, useRef, useEffect } from "react";
 
 import uuid from 'react-uuid';
-import "./addTo.css"
+import "../../styles/styles.css";
 import Context from "../../Context";
 const Create = () => {
-
+  useEffect(() => {
+    window.scrollTo(0,0)
+  },[])
   const {openMod, setOpenMod, courseList, setCourseList} =useContext(Context)
 
   const titleInput = useRef()
@@ -49,30 +51,30 @@ const Create = () => {
       <h2>Lägg till ny kurs</h2>
 
       <form onSubmit={handleSubmit}>
-      <div>
-                <label >Kursnamn</label>
-                <input ref={titleInput}  type="text" required />
+            <div className="input-div">
+                <label htmlFor="title" >Kursnamn</label>
+                <input className="input" ref={titleInput} id="title" type="text" required />
             </div>
-            <div>
-                <label >Startdatum</label>
-                <input ref={startInput} type="date" />
+            <div className="input.div">
+                <label htmlFor="start" >Startdatum</label>
+                <input className="input" ref={startInput} id="start" type="date" />
             </div>
-            <div>
-                <label>Kurslängd (veckor)</label>
-                <input ref={lenghtInput} type="text" required />
+            <div className="input.div">
+                <label htmlFor="lenght">Kurslängd (veckor)</label>
+                <input className="input" ref={lenghtInput} id="lenght" type="text" required />
             </div>
-            <div>
-                <label >Kursnummer</label>
-                <input ref={numbertInput} type="text" required />
+            <div className="input-div">
+                <label htmlFor="number">Kursnummer</label>
+                <input className="input" ref={numbertInput} id="number" type="text" required />
             </div>
-            <div>
-                <label>Kort beskrivning</label>
-                <textarea ref={descriptInput} cols="30" rows="5" required></textarea>
+            <div className="input-div">
+                <label htmlFor="descript">Kort beskrivning</label>
+                <textarea className="input textarea" ref={descriptInput} id="descript" cols="30" rows="3" required></textarea>
             </div>
         
-        <button>Lägg Till kurs</button>
+        <button className="btn-sub">Lägg Till kurs</button>
       </form>
-      <button onClick={() => {setOpenMod(!openMod)}}>avbryt</button>
+      <button className="btn-cancel" onClick={() => {setOpenMod(!openMod)}}>avbryt</button>
       
       
     

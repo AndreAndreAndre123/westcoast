@@ -20,13 +20,23 @@
       "id": "70090804-7f8f-a250-968a-c92735fb60a3"
     },
     {
-      "firstName": "johan",
-      "lastName": "rönndahl",
-      "email": "johan@gmail.com",
-      "phone": "07364623762",
-      "socialNbr": "19942323222",
-      "comp": "engelska och svenska\n",
-      "id": "34374f34-a508-85aa-e67c-e5db40778ae0"
+      "firstName": "bob",
+      "lastName": "bobsson",
+      "email": "bobsson@gmail.com",
+      "phone": "075324234234",
+      "socialNbr": "234324",
+      "comp": "svenska, engelska, franska\n",
+      "id": "a77983ef-82b5-e7cb-dcf4-f8445fcc7a16"
+    },
+    {
+      "firstName": "john",
+      "lastName": "johansson",
+      "email": "johan@gmai.com",
+      "phone": "073434343",
+      "socialNbr": "12313213312",
+      "comp": "mästare på hugga ved, stenhuggare, gruvarbetare, polis, brandman, vetenskapsman, simmlärare, utvecklare, kosmonaut",
+      "id": "eeeb5697-4e68-1b5b-6e34-5b949768ea3a"
     }
+
   ]
 }

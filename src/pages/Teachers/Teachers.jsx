@@ -27,7 +27,7 @@ const Teachers = () => {
         { error && <div>{ error }</div> }
       { isPending && <div>Loading...</div> }
       { teachersList && <TeacherList teachersList={teachersList} /> }
-      <button className="add-teacher-course-button" onClick={() => {setOpenMod(!openMod)}}>Lägg till lärare</button>
+      <button className="btn-sub" onClick={() => {setOpenMod(!openMod)}}>Lägg till lärare</button>
       </div>
  
         </>

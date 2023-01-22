@@ -17,7 +17,7 @@ return(
   {
     teachersList && teachersList.map(teacher => {
       return(
-        <div key={teacher.id} className="each-teacher-box">
+        <div key={teacher.id} className="each-teacher-course-box">
         <h4>{teacher.firstName} {teacher.lastName}</h4>
         <p>Personnummer: {teacher.socialNbr}</p>
         <p>e-post: {teacher.email}</p>

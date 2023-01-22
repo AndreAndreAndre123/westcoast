@@ -1,10 +1,12 @@
-import { useState, useContext, useRef } from "react";
+import {  useContext, useRef, useEffect } from "react";
 
 import uuid from 'react-uuid';
-import "./addTo.css"
+import "../../styles/styles.css";
 import Context from "../../Context";
-const CreateTeacher = ({state}) => {
-
+const CreateTeacher = () => {
+  useEffect(() => {
+    window.scrollTo(0,0)
+  },[])
   const {openMod, setOpenMod, setTeachersList, teachersList} =useContext(Context)
 
   const firstName = useRef()
@@ -13,7 +15,6 @@ const CreateTeacher = ({state}) => {
   const phone = useRef()
   const socialNbr = useRef()
   const comp = useRef()
-
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -50,33 +51,33 @@ const CreateTeacher = ({state}) => {
 
       <form onSubmit={handleSubmit}>
       <div>
-                <label htmlFor="first-name-input">Förnamn</label>
-                <input ref={firstName} id="first-name-input" type="text" required />
+                <label htmlFor="first-name">Förnamn</label>
+                <input className="input"  ref={firstName} id="first-name" type="text" required />
             </div>
             <div>
-                <label htmlFor="last-name-input">Efternamn</label>
-                <input ref={lastName} id="last-name-input" type="text" required></input>
+                <label htmlFor="last-name">Efternamn</label>
+                <input className="input"  ref={lastName} id="last-name" type="text" required></input>
             </div>
             <div>
-                <label htmlFor="email-input">email</label>
-                <input ref={email} type="email" id="email-input" />
+                <label htmlFor="email">email</label>
+                <input className="input"  ref={email} type="email" id="email" />
             </div>
             <div>
-                <label htmlFor="tel-input" >Telefon</label>
-                <input ref={phone} id="tel-input"  type="text" required />
+                <label htmlFor="tel" >Telefon</label>
+                <input className="input"  ref={phone} id="tel"  type="text" required />
             </div>
             <div>
-                <label htmlFor="socialnbr-input">Personummer</label>
-                <input ref={socialNbr}id="socialnbr-input" type="text" required />
+                <label htmlFor="socialnbr">Personummer</label>
+                <input className="input"  ref={socialNbr}id="socialnbr" type="text" required />
             </div>
             <div>
-                <label htmlFor="comp-input">Kompetenser</label>
-                <textarea ref={comp} id="comp-input" cols="20" rows="3" required></textarea> 
+                <label htmlFor="comp">Kompetenser</label>
+                <textarea className="input textarea" ref={comp} id="comp" cols="20" rows="3" required></textarea> 
             </div>
         
-        <button>Lägg Till lärare</button>
+        <button className="btn-sub" >Lägg Till lärare</button>
       </form>
-      <button onClick={() => {setOpenMod(!openMod)}}>avbryt</button>
+      <button className="btn-cancel" onClick={() => {setOpenMod(!openMod)} }>avbryt</button>
       
       
     

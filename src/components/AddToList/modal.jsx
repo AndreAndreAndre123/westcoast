@@ -3,14 +3,14 @@ import AddTeacher from "./AddTeacher";
 import  ReactDOM  from "react-dom";
 import {useContext} from "react"
 
-import "./addTo.css"
+import "../../styles/styles.css";
 import Context from "../../Context";
 
 const Modal = ({type}) => {
     const {openMod} =useContext(Context)
     console.log(type)
     if(!openMod)return null;
-    
+
     const Overlay = () => {
         return(
             <div className="overlay-div"></div>

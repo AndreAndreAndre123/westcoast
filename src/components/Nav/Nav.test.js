@@ -12,4 +12,10 @@ describe("Nav test" , () =>{
         const Home= screen.getByText("Hem")
         expect(Home).toHaveAttribute("href", "/")
     })
+
+    test('teachers page', () => {
+        setup()
+        const teachers = screen.getByText('Lärare')
+        expect(teachers).toHaveAttribute('href', '/teachers')
+    })
 })

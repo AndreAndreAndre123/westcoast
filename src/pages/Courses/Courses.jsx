@@ -30,7 +30,7 @@ const Courses = () => {
         { error && <div>{ error }</div> }
       { isPending && <div>Loading...</div> }
       { courseList && <CourseList courseList={courseList} /> }
-      <button className="add-teacher-course-button" onClick={() => {setOpenMod(!openMod)}}>Lägg till kurs</button>
+      <button className="btn-sub" onClick={() => {setOpenMod(!openMod)}}>Lägg till kurs</button>
       </div>
         </>
 

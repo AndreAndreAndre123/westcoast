@@ -8,5 +8,14 @@ describe('Add Course list page tests', () => {
         setup()
         const title = screen.getByText("Lägg till ny kurs")
         expect(title).toBeInTheDocument()
+
+
+        
     })
+    describe('inputs', () => {
+    test('course input check', () => {
+        setup()
+        const input = screen.getByLabelText('Startdatum')
+        expect(input).toBeInTheDocument()
+    })})
 });
